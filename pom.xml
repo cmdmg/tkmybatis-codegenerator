@@ -10,10 +10,10 @@
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.hw</groupId>
-    <artifactId>springboot-mybatis-test</artifactId>
+    <artifactId>tkmybatis-codegenerator</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-mybatis-test</name>
-    <description>Demo project for Spring Boot</description>
+    <name>tkmybatis-codegenerator</name>
+    <description>tkmybatis-codegenerator</description>
 
     <properties>
         <java.version>1.8</java.version>
