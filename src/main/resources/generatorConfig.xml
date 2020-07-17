@@ -32,24 +32,36 @@
 
 		<!--生成实体类 指定包名 以及生成的地址 （可以自定义地址，但是路径不存在不会自动创建 使用Maven生成在target目录下，会自动创建） -->
 		<javaModelGenerator targetPackage="com.xxs.bonus.entity"
-			targetProject="E:\w\opencode\codegenerator\src\main\java">
+			targetProject="E:\w\opencode\tkmybatis-codegenerator\src\main\java">
 			<property name="enableSubPackages" value="true" />
 			<property name="trimStrings" value="true" />
 		</javaModelGenerator>
 		<!--生成SQLMAP文件 -->
 		<sqlMapGenerator targetPackage="com.xxs.bonus.mapper"
-			targetProject="E:\w\opencode\codegenerator\src\main\java">
+			targetProject="E:\w\opencode\tkmybatis-codegenerator\src\main\java">
 			<property name="enableSubPackages" value="false" />
 		</sqlMapGenerator>
 		<!--生成Dao文件 可以配置 type="XMLMAPPER"生成xml的dao实现 context id="DB2Tables" 修改targetRuntime="MyBatis3" -->
 		<javaClientGenerator type="XMLMAPPER"
 			targetPackage="com.xxs.bonus.mapper"
-			targetProject="E:\w\opencode\codegenerator\src\main\java">
+			targetProject="E:\w\opencode\tkmybatis-codegenerator\src\main\java">
 			<property name="enableSubPackages" value="false" />
 		</javaClientGenerator>
 
 		<!--对应数据库表 mysql可以加入主键自增 字段命名 忽略某字段等 -->
 		<table tableName="gw_gold_coin_record" domainObjectName="GoldCoinRecord" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
+		<table tableName="gw_gold_coin_reward_account_summary" domainObjectName="GoldCoinRewardAccountSummary" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
+		<table tableName="gw_gold_coin_reward_month_fifth_grade_record" domainObjectName="GoldCoinRewardMonthFifthGradeRecord" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
+		<table tableName="gw_gold_coin_reward_month_first_grade_record" domainObjectName="GoldCoinRewardMonthFirstGradeRecord" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
+		<table tableName="gw_gold_coin_reward_month_fourth_grade_record" domainObjectName="GoldCoinRewardMonthFourthGradeRecord" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
+		<table tableName="gw_gold_coin_reward_month_second_grade_record" domainObjectName="GoldCoinRewardMonthSecondGradeRecord" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
+		<table tableName="gw_gold_coin_reward_month_third_grade_record" domainObjectName="GoldCoinRewardMonthThirdGradeRecord" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
+		<table tableName="gw_gold_coin_reward_pool_month" domainObjectName="GoldCoinRewardPoolMonth" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
+		<table tableName="gw_gold_coin_reward_pool_week" domainObjectName="GoldCoinRewardPoolWeek" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
+		<table tableName="gw_gold_coin_reward_week_record" domainObjectName="GoldCoinRewardWeekRecord" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
+		<table tableName="gw_reward_config" domainObjectName="RewardConfig" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
+		<table tableName="gw_third_party_task_error_log" domainObjectName="ThirdPartyTaskErrorLog" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
+		<table tableName="gw_third_party_task_reward" domainObjectName="ThirdPartyTaskReward" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
 
 	</context>
 </generatorConfiguration>
